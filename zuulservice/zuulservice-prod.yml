@@ -1,0 +1,11 @@
+zuul.ignored-services: "orgservice-new"
+zuul.prefix:  /api
+zuul.routes.organizationservice: /organization/**
+zuul.routes.assets-service: /assets/**
+zuul.routes.authenticationservice: /auth/**
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+#hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2
+#hystrix.command.assets-service.execution.isolation.thread.timeoutInMilliseconds: 2
+#assets-service.ribbon.ReadTimeout: 2
+signing.key: "345345fsdfsf5345"
